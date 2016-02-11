@@ -1,0 +1,35 @@
+{
+    "name": "pias-2",
+    "version": "0.2.0",
+    "description": "Application for AngularJS + Sails.js with separated back- and frontend.",
+    "keywords": [
+        "sails.js",
+        "backend",
+        "REST",
+        "API",
+        "JWT",
+        "JSON Web Token",
+        "Passport.js",
+        "frontend",
+        "angular",
+        "slush",
+        "slush-angular"
+    ],
+    "main": "",
+    "dependencies": {},
+    "devDependencies": {},
+    "scripts": {
+        "install": "git submodule update --init --recursive && cd backend && npm install && cd ../frontend && npm install",
+        "start": "(cd backend && sails lift) & (cd frontend && gulp serve)",
+        "test": "cd backend && mocha"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/lohbrand/pias-2.git"
+    },
+    "bugs": {
+        "url": "https://github.com/lohbrand/pias-2/issues"
+    },
+    "author": "Steffen Lohbrandt",
+    "license": "MIT"
+}
